@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Interactive Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"/>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        <div class="infoblock hidden" id="infoblock">
+            <div class="infoblock__container">
+                <center>
+                    <strong><span>Размеры движения пассажирских поездов</span></strong>
+                </center>
+                <hr>
+                <table class="infoblock__table">
+                    <tbody>
+                        <tr>
+                            <td class="col1">Наименование участка</td>
+                            <td class="col2">Рижская - Ховрино</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Выбранный год</td>
+                            <td class="col2">2023 г.</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Размеры движения пассажирских поездов</td>
+                            <td class="col2">29 пар поездов в сутки</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Размеры движения высокоскоростных поездов</td>
+                            <td class="col2">13 пар поездов в сутки</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
