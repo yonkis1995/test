@@ -48,6 +48,20 @@ hr {
   min-width: 35vw;
 }
 
+@media (min-width: 1px) and (max-width: 845px) {
+  .infoblock {
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .infoblock {
+    max-width: 90vw;
+    max-height: 85%;
+    font-size: .875rem;
+  }
+}
+
 .infoblock>* {
   background-color: #fff;
   color: #000;
